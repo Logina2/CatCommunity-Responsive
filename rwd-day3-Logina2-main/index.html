@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>cats</title>
+    <style>
+        body {
+            background: rgb(233, 233, 203);
+        }
+
+        #bookmark {
+            width: 50px;
+            height: 70px;
+            margin: auto;
+            margin-left: 100px;
+        }
+
+        .circle img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .small-box img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bookmark" class="d-none d-lg-block"></canvas>
+    <div class="container-fluid mt-4 d-flex justify-content-center">
+        <div class="row">
+            <div class="col-lg-2 d-none d-lg-flex flex-lg-column align-items-center gap-2">
+                <div class="circle">
+                    <img src="images/1.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/2.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/3.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/4.jpg" class="img-fluid" />
+                </div>
+            </div>
+
+            <div class="col-12 d-none d-md-flex d-lg-none justify-content-center gap-2 mb-3">
+                <div class="circle">
+                    <img src="images/1.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/2.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/3.jpg" class="img-fluid" />
+                </div>
+                <div class="circle">
+                    <img src="images/4.jpg" class="img-fluid" />
+                </div>
+            </div>
+
+            <div class="col-12 d-md-none text-center mb-3">
+                <div class="circle mx-auto mb-2">
+                    <img src="images/1.jpg" class="img-fluid" />
+                </div>
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <div class="circle">
+                        <img src="images/2.jpg" class="img-fluid" />
+                    </div>
+                    <div class="circle">
+                        <img src="images/3.jpg" class="img-fluid" />
+                    </div>
+                    <div class="circle">
+                        <img src="images/4.jpg" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-10 col-md-12">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <p>
+                            Welcome to our cozy corner for cat lovers! 🐾 Whether they’re sleeping in sunbeams, chasing
+                            toys, or purring on our laps, cats bring unmatched joy, independence, and comfort into our
+                            lives. This community is dedicated to celebrating our feline companions—sharing cute photos,
+                            expert tips, and heartwarming stories of our little masters. From playful kittens to wise
+                            senior cats, let's cherish the wonderful, whiskered friends who rule our homes!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/persian.jpg" /></div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/red.jpg" /></div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/short.jpg" /></div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="small-box"><img src="images/pp.jpg" /></div>
+                            <div class="card-body">
+                                <h6>persian cats</h6>
+                                <p>
+                                    The Persian cat, also known as the Persian Longhair or simply Persian, is a
+                                    long-haired traditional breed of cat characterised by a round face and petite, but
+                                    not flat and not smashed in, muzzle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="small-box"><img src="images/rr.jpg" /></div>
+                            <div class="card-body">
+                                <h6>Ragdoll</h6>
+                                <p>
+                                    The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its
+                                    morphology is large and weighty, and it has a semi-long and silky soft coat.
+                                    American breeder Ann Baker developed Ragdolls in the 1960s. They are best known for
+                                    their docile, placid temperament and affectionate nature.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card">
+                            <div class="small-box"><img src="images/golden.jpg" /></div>
+                            <div class="card-body">
+                                <h6>British Shorthair</h6>
+                                <p>
+                                    The British Shorthair is the pedigree version of the landrace of British domestic
+                                    cat, with a distinctively stocky body, thick coat, and broad face. The most familiar
+                                    colour variant is the "British Blue", with a solid grey-blue coat, copper-coloured
+                                    eyes, and a medium-sized tail.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-5">
+                    <hr style="width: 80%; margin: auto" />
+                    <div>▲</div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <p>
+                            <span style="font-size: 40px; font-weight: bold">Cats</span>
+                            also called domestic cat and house cat, is a small carnivorous mammal. It is an obligate
+                            carnivore, requiring a predominantly meat-based diet. Its retractable claws are adapted to
+                            killing small prey species such as mice and rats.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-lg-6 col-md-12 d-none d-md-block">
+                        <iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/Hm6sV4bYmAk?si=Vgf9N3EEjQNJew-a" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p>
+                            Beyond their obvious cuteness and companionship, cats are beloved for a multitude of reasons
+                            that make them unique, comforting, and entertaining household members.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/b.jpg" /></div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/c.jpg" /></div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="box"><img src="images/d.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        /**@type {HTMLCanvasElement} */
+
+        const canvas = document.getElementById('bookmark');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        ctx.fillStyle = 'black';
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(canvas.width, 0);
+        ctx.lineTo(canvas.width, canvas.height - 15);
+        ctx.lineTo(canvas.width / 2, canvas.height);
+        ctx.lineTo(0, canvas.height - 15);
+        ctx.closePath();
+        ctx.fill();
+
+    </script>
+
+</body>
+
+</html>
